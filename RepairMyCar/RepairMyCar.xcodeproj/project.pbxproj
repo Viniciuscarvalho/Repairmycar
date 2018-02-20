@@ -12,6 +12,7 @@
 		EAFF9F9A203A43C40074A294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F99203A43C40074A294 /* Assets.xcassets */; };
 		EAFF9F9D203A43C40074A294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F9B203A43C40074A294 /* LaunchScreen.storyboard */; };
 		EAFF9FA8203A43C40074A294 /* RepairMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */; };
+		EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		EAFF9FA3203A43C40074A294 /* RepairMyCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepairMyCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairMyCarTests.swift; sourceTree = "<group>"; };
 		EAFF9FA9203A43C40074A294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		EAFF9FB6203A596E0074A294 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */,
 				EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U8286L9PF;
-				INFOPLIST_FILE = RepairMyCar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RepairMyCar/Essentials/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viniciuscarvalho.RepairMyCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U8286L9PF;
-				INFOPLIST_FILE = RepairMyCar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RepairMyCar/Essentials/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viniciuscarvalho.RepairMyCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
