@@ -1,21 +1,30 @@
 import UIKit
+import CoreLocation
 import MapKit
 
-class ListCarWorkshopsViewController: UIViewController {
+class ListCarWorkshopsViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    let regionRadius: CLLocationDistance = 1000
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
-        centerMapOnLocation(location: initialLocation)
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.requestAlwaysAuthorization()
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
     }
     
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius, regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        mapView.setRegion(region, animated: true)
+        self.mapView.showsUserLocation = true
     }
 
 }

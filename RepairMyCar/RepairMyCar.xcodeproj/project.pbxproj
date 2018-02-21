@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638D0FDF6A49527B1F415033 /* Pods_RepairMyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */; };
 		EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9F92203A43C30074A294 /* AppDelegate.swift */; };
 		EAFF9F98203A43C40074A294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F96203A43C40074A294 /* Main.storyboard */; };
 		EAFF9F9A203A43C40074A294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F99203A43C40074A294 /* Assets.xcassets */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		238FD7B8522C9251D26B1800 /* Pods-RepairMyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.release.xcconfig"; sourceTree = "<group>"; };
+		68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepairMyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E306BA29259E99A02B0FC9F0 /* Pods-RepairMyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFF9F8F203A43C30074A294 /* RepairMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepairMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFF9F92203A43C30074A294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFF9F97203A43C40074A294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638D0FDF6A49527B1F415033 /* Pods_RepairMyCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1BF60A097F4B618B7537B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E306BA29259E99A02B0FC9F0 /* Pods-RepairMyCar.debug.xcconfig */,
+				238FD7B8522C9251D26B1800 /* Pods-RepairMyCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAFF9F86203A43C30074A294 = {
 			isa = PBXGroup;
 			children = (
 				EAFF9F91203A43C30074A294 /* RepairMyCar */,
 				EAFF9FA6203A43C40074A294 /* RepairMyCarTests */,
 				EAFF9F90203A43C30074A294 /* Products */,
+				EAFF9FBC203CF4A70074A294 /* Frameworks */,
+				2B1BF60A097F4B618B7537B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +93,9 @@
 		EAFF9F91203A43C30074A294 /* RepairMyCar */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FB2203A59040074A294 /* CarWorkshops */,
 				EAFF9FB4203A59290074A294 /* Shared */,
 				EAFF9FB3203A59150074A294 /* Essentials */,
-				EAFF9FB2203A59040074A294 /* CarWorkshops */,
 			);
 			path = RepairMyCar;
 			sourceTree = "<group>";
@@ -96,6 +112,7 @@
 		EAFF9FB2203A59040074A294 /* CarWorkshops */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FBF203D0A210074A294 /* Datasource */,
 				EAFF9FB9203A59A50074A294 /* Presenters */,
 				EAFF9FB8203A599A0074A294 /* Views */,
 				EAFF9FB7203A59830074A294 /* Entities */,
@@ -160,6 +177,21 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
+		EAFF9FBC203CF4A70074A294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAFF9FBF203D0A210074A294 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAFF9FAC203A43C40074A294 /* Build configuration list for PBXNativeTarget "RepairMyCar" */;
 			buildPhases = (
+				8BDB9AC8E044B4335CD0F641 /* [CP] Check Pods Manifest.lock */,
 				EAFF9F8B203A43C30074A294 /* Sources */,
 				EAFF9F8C203A43C30074A294 /* Frameworks */,
 				EAFF9F8D203A43C30074A294 /* Resources */,
+				EE24E1CFD21270CBDAF601C7 /* [CP] Embed Pods Frameworks */,
+				6BBDFFA19034137E33F8A1D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +246,11 @@
 					EAFF9F8E203A43C30074A294 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					EAFF9FA2203A43C40074A294 = {
 						CreatedOnToolsVersion = 9.2;
@@ -257,6 +297,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BBDFFA19034137E33F8A1D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDB9AC8E044B4335CD0F641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepairMyCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE24E1CFD21270CBDAF601C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAFF9F8B203A43C30074A294 /* Sources */ = {
@@ -415,6 +509,7 @@
 		};
 		EAFF9FAD203A43C40074A294 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E306BA29259E99A02B0FC9F0 /* Pods-RepairMyCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +525,7 @@
 		};
 		EAFF9FAE203A43C40074A294 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238FD7B8522C9251D26B1800 /* Pods-RepairMyCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
