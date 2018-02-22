@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F35124A203F045C00342A83 /* Workshops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351249203F045B00342A83 /* Workshops.swift */; };
+		2F35124C203F463700342A83 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35124B203F463700342A83 /* Resource.swift */; };
+		2F35124E203F737200342A83 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35124D203F737200342A83 /* WebService.swift */; };
+		2F351251203F77FA00342A83 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351250203F77FA00342A83 /* Result.swift */; };
+		2F351254203F7F3E00342A83 /* WorkshopsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351253203F7F3E00342A83 /* WorkshopsUseCase.swift */; };
 		638D0FDF6A49527B1F415033 /* Pods_RepairMyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */; };
 		EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9F92203A43C30074A294 /* AppDelegate.swift */; };
 		EAFF9F98203A43C40074A294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F96203A43C40074A294 /* Main.storyboard */; };
@@ -14,7 +19,6 @@
 		EAFF9F9D203A43C40074A294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F9B203A43C40074A294 /* LaunchScreen.storyboard */; };
 		EAFF9FA8203A43C40074A294 /* RepairMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */; };
 		EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */; };
-		EAFF9FC1203E4AB40074A294 /* CarWorkshopMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FC0203E4AB40074A294 /* CarWorkshopMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,11 @@
 
 /* Begin PBXFileReference section */
 		238FD7B8522C9251D26B1800 /* Pods-RepairMyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.release.xcconfig"; sourceTree = "<group>"; };
+		2F351249203F045B00342A83 /* Workshops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workshops.swift; sourceTree = "<group>"; };
+		2F35124B203F463700342A83 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		2F35124D203F737200342A83 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		2F351250203F77FA00342A83 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2F351253203F7F3E00342A83 /* WorkshopsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsUseCase.swift; sourceTree = "<group>"; };
 		68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepairMyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E306BA29259E99A02B0FC9F0 /* Pods-RepairMyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFF9F8F203A43C30074A294 /* RepairMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepairMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +50,6 @@
 		EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairMyCarTests.swift; sourceTree = "<group>"; };
 		EAFF9FA9203A43C40074A294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsViewController.swift; sourceTree = "<group>"; };
-		EAFF9FC0203E4AB40074A294 /* CarWorkshopMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,52 @@
 				238FD7B8522C9251D26B1800 /* Pods-RepairMyCar.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F35123D203F031900342A83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F351246203F03C300342A83 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		2F351247203F03C300342A83 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2F351248203F03EC00342A83 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F35124B203F463700342A83 /* Resource.swift */,
+				2F35124D203F737200342A83 /* WebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2F35124F203F77E900342A83 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F351250203F77FA00342A83 /* Result.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F351252203F7F2100342A83 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				2F351253203F7F3E00342A83 /* WorkshopsUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		EAFF9F86203A43C30074A294 = {
@@ -114,9 +168,10 @@
 		EAFF9FB2203A59040074A294 /* CarWorkshops */ = {
 			isa = PBXGroup;
 			children = (
-				EAFF9FBF203D0A210074A294 /* Datasource */,
-				EAFF9FB9203A59A50074A294 /* Presenters */,
-				EAFF9FB8203A599A0074A294 /* Views */,
+				2F351252203F7F2100342A83 /* UseCases */,
+				2F351246203F03C300342A83 /* Datasource */,
+				2F351247203F03C300342A83 /* Presenters */,
+				2F35123D203F031900342A83 /* Views */,
 				EAFF9FB7203A59830074A294 /* Entities */,
 				EAFF9FB6203A596E0074A294 /* ViewControllers */,
 			);
@@ -136,6 +191,8 @@
 		EAFF9FB4203A59290074A294 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2F35124F203F77E900342A83 /* Helpers */,
+				2F351248203F03EC00342A83 /* Network */,
 				EAFF9FB5203A592F0074A294 /* Views */,
 			);
 			path = Shared;
@@ -161,23 +218,9 @@
 		EAFF9FB7203A59830074A294 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				EAFF9FC0203E4AB40074A294 /* CarWorkshopMarker.swift */,
+				2F351249203F045B00342A83 /* Workshops.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		EAFF9FB8203A599A0074A294 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		EAFF9FB9203A59A50074A294 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 		EAFF9FBC203CF4A70074A294 /* Frameworks */ = {
@@ -186,13 +229,6 @@
 				68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EAFF9FBF203D0A210074A294 /* Datasource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,9 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFF9FC1203E4AB40074A294 /* CarWorkshopMarker.swift in Sources */,
+				2F351251203F77FA00342A83 /* Result.swift in Sources */,
 				EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */,
+				2F35124C203F463700342A83 /* Resource.swift in Sources */,
+				2F351254203F7F3E00342A83 /* WorkshopsUseCase.swift in Sources */,
 				EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */,
+				2F35124E203F737200342A83 /* WebService.swift in Sources */,
+				2F35124A203F045C00342A83 /* Workshops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

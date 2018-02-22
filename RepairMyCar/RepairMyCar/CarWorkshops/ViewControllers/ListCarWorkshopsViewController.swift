@@ -7,7 +7,6 @@ class ListCarWorkshopsViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     var locationManager = CLLocationManager()
     private let searchRadius: Double = 1000
-    private var searchedTypes = ["oficinas"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
