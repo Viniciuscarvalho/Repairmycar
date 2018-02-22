@@ -14,6 +14,7 @@
 		EAFF9F9D203A43C40074A294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F9B203A43C40074A294 /* LaunchScreen.storyboard */; };
 		EAFF9FA8203A43C40074A294 /* RepairMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */; };
 		EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */; };
+		EAFF9FC1203E4AB40074A294 /* CarWorkshopMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FC0203E4AB40074A294 /* CarWorkshopMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairMyCarTests.swift; sourceTree = "<group>"; };
 		EAFF9FA9203A43C40074A294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsViewController.swift; sourceTree = "<group>"; };
+		EAFF9FC0203E4AB40074A294 /* CarWorkshopMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		EAFF9FB7203A59830074A294 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FC0203E4AB40074A294 /* CarWorkshopMarker.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFF9FC1203E4AB40074A294 /* CarWorkshopMarker.swift in Sources */,
 				EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */,
 				EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */,
 			);

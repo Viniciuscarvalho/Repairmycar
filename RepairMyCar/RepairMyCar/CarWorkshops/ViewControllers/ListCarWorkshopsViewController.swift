@@ -1,16 +1,17 @@
 import UIKit
 import CoreLocation
-import MapKit
+import GoogleMaps
 
-class ListCarWorkshopsViewController: UIViewController, CLLocationManagerDelegate {
+class ListCarWorkshopsViewController: UIViewController {
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: GMSMapView!
     var locationManager = CLLocationManager()
+    private let searchRadius: Double = 1000
+    private var searchedTypes = ["oficinas"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
             locationManager.requestAlwaysAuthorization()
             locationManager.requestWhenInUseAuthorization()
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -18,13 +19,14 @@ class ListCarWorkshopsViewController: UIViewController, CLLocationManagerDelegat
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations[0]
-        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
-        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
-        mapView.setRegion(region, animated: true)
-        self.mapView.showsUserLocation = true
+    private func fetchNearbyWorkshops(coordinate: CLLocationCoordinate2D) {
+        mapView.clear()
+        dataProvider.fetchPlacesNearCoordinate(coordinate, radius: searchRadius, types: searchedTypes) { places in
+            places.forEach {
+                let marker = CarWorkshopMarker(place: $0)
+                marker.map = self.mapView
+            }
+        }
     }
 
 }
