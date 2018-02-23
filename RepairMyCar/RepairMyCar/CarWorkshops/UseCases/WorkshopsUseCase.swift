@@ -7,6 +7,7 @@ final class WorkshopsUseCase {
             let workshopsList = try JSONDecoder().decode(WorkshopsList.self, from: data)
             return workshopsList.workshops
         } catch {
+            print(error.localizedDescription)
             return nil
         }
     }

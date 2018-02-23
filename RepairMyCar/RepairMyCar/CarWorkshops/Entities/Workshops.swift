@@ -15,18 +15,17 @@ public struct Workshops: Codable {
     let name: String
     let id: String
     let icon: String
-    let photos: [Photo]
+    //let photos: [Photo]
     let placeID: String
-    let rating: Double
     let reference, scope: String
     let types: [String]
     let vicinity: String
     
     enum CodingKeys: String, CodingKey {
         case geometry, icon, id, name
-        case photos
+        //case photos
         case placeID = "place_id"
-        case rating, reference, scope, types, vicinity
+        case reference, scope, types, vicinity
     }
 }
 
