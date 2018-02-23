@@ -12,6 +12,8 @@
 		2F35124E203F737200342A83 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35124D203F737200342A83 /* WebService.swift */; };
 		2F351251203F77FA00342A83 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351250203F77FA00342A83 /* Result.swift */; };
 		2F351254203F7F3E00342A83 /* WorkshopsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351253203F7F3E00342A83 /* WorkshopsUseCase.swift */; };
+		2F35125720407BD800342A83 /* PlacesNearCoordinateNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35125620407BD800342A83 /* PlacesNearCoordinateNetwork.swift */; };
+		2F35125920407FFB00342A83 /* CarWorkshopMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35125820407FFB00342A83 /* CarWorkshopMarker.swift */; };
 		638D0FDF6A49527B1F415033 /* Pods_RepairMyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */; };
 		EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9F92203A43C30074A294 /* AppDelegate.swift */; };
 		EAFF9F98203A43C40074A294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F96203A43C40074A294 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		2F35124D203F737200342A83 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		2F351250203F77FA00342A83 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2F351253203F7F3E00342A83 /* WorkshopsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsUseCase.swift; sourceTree = "<group>"; };
+		2F35125620407BD800342A83 /* PlacesNearCoordinateNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNearCoordinateNetwork.swift; sourceTree = "<group>"; };
+		2F35125820407FFB00342A83 /* CarWorkshopMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopMarker.swift; sourceTree = "<group>"; };
 		68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepairMyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E306BA29259E99A02B0FC9F0 /* Pods-RepairMyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFF9F8F203A43C30074A294 /* RepairMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepairMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,7 @@
 		2F351248203F03EC00342A83 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2F35125520407BA100342A83 /* Protocol */,
 				2F35124B203F463700342A83 /* Resource.swift */,
 				2F35124D203F737200342A83 /* WebService.swift */,
 			);
@@ -124,6 +129,14 @@
 				2F351253203F7F3E00342A83 /* WorkshopsUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		2F35125520407BA100342A83 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2F35125620407BD800342A83 /* PlacesNearCoordinateNetwork.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EAFF9F86203A43C30074A294 = {
@@ -219,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				2F351249203F045B00342A83 /* Workshops.swift */,
+				2F35125820407FFB00342A83 /* CarWorkshopMarker.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -399,7 +413,9 @@
 				2F351251203F77FA00342A83 /* Result.swift in Sources */,
 				EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */,
 				2F35124C203F463700342A83 /* Resource.swift in Sources */,
+				2F35125920407FFB00342A83 /* CarWorkshopMarker.swift in Sources */,
 				2F351254203F7F3E00342A83 /* WorkshopsUseCase.swift in Sources */,
+				2F35125720407BD800342A83 /* PlacesNearCoordinateNetwork.swift in Sources */,
 				EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */,
 				2F35124E203F737200342A83 /* WebService.swift in Sources */,
 				2F35124A203F045C00342A83 /* Workshops.swift in Sources */,

@@ -7,6 +7,8 @@ class ListCarWorkshopsViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     var locationManager = CLLocationManager()
     private let searchRadius: Double = 1000
+    private let dataProvider = Resources()
+    private let types = ["car_repair"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +18,18 @@ class ListCarWorkshopsViewController: UIViewController {
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
+        fetchNearbyWorkshops(coordinate: mapView.camera.target)
     }
     
     private func fetchNearbyWorkshops(coordinate: CLLocationCoordinate2D) {
         mapView.clear()
-        dataProvider.fetchPlacesNearCoordinate(coordinate, radius: searchRadius, types: searchedTypes) { places in
-            places.forEach {
-                let marker = CarWorkshopMarker(place: $0)
-                marker.map = self.mapView
-            }
+        dataProvider.loadPlacesNearCoordinate(coordinate, radius: searchRadius, types: types) { places in
+            if let places = places {
+                places.forEach {
+                    let marker = CarWorkshopsMarker(place: $0)
+                    marker.map = self.mapView
+                }
+            } else {}
         }
     }
 
