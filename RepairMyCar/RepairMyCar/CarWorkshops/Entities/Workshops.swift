@@ -20,12 +20,22 @@ public struct Workshops: Codable {
     let reference, scope: String
     let types: [String]
     let vicinity: String
+    let openingHours: OpeningHours?
     
     enum CodingKeys: String, CodingKey {
         case geometry, icon, id, name
         //case photos
         case placeID = "place_id"
         case reference, scope, types, vicinity
+        case openingHours = "opening_hours"
+    }
+}
+
+struct OpeningHours: Codable {
+    let openNow: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case openNow = "open_now"
     }
 }
 
@@ -42,7 +52,6 @@ struct Photo: Codable {
     
     enum CodingKeys: String, CodingKey {
         case photoReference = "photo_reference"
-        
     }
 }
 

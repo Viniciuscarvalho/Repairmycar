@@ -1,6 +1,6 @@
 import Foundation
 
-final class WorkshopsUseCase {
+public struct WorkshopsDecoder {
     
     static func addWorkshops(data: Data) -> [Workshops]? {
         do {
@@ -11,4 +11,6 @@ final class WorkshopsUseCase {
             return nil
         }
     }
+    
 }
+
