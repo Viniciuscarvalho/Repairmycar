@@ -5,7 +5,7 @@ public class ListCarWorkshopsInteractor {
     private var workshopsGateway: WorkshopsGateway
     private var presenter: ListCarWorkshopPresenter
     
-    public init(workshopsGateway: WorkshopsGateway, presenter: ListCarWorkshopPresenter) {
+    init(workshopsGateway: WorkshopsGateway, presenter: ListCarWorkshopPresenter) {
         self.workshopsGateway = workshopsGateway
         self.presenter = presenter
     }

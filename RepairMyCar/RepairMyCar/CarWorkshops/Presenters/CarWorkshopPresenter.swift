@@ -9,7 +9,7 @@ class CarWorkshopPresenter: ListCarWorkshopPresenter {
         self.delegate = delegate
     }
     
-    func displayCarworkshops(workshops: [Workshops]) {
+    func displayCarworkshops(workshops: [Workshop]) {
         DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             self.delegate?.didList(workshops: workshops)

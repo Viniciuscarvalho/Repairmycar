@@ -3,8 +3,8 @@ import CoreLocation
 import GoogleMaps
 
 protocol ListCarWorkshopsDelegate: class {
-    func didList(workshops: [Workshops])
-    func didGetImage(workshops: Workshops, image: UIImage)
+    func didList(workshops: [Workshop])
+    func didGetImage(workshops: Workshop, image: UIImage)
 }
 
 class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDelegate {
@@ -28,12 +28,12 @@ class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDelegate
         }
     }
     
-    func didList(workshops: [Workshops]) {
-        <#code#>
+    func didList(workshops: [Workshop]) {
+        
     }
     
-    func didGetImage(workshops: Workshops, image: UIImage) {
-        <#code#>
+    func didGetImage(workshops: Workshop, image: UIImage) {
+        
     }
     
 }

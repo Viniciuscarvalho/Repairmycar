@@ -21,9 +21,6 @@
 		EAFF9FCB2042138B0074A294 /* CarWorkshopsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCA2042138B0074A294 /* CarWorkshopsDetailViewController.swift */; };
 		EAFF9FCD204214000074A294 /* ListCarWorkshopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCC204214000074A294 /* ListCarWorkshopPresenter.swift */; };
 		EAFF9FD0204216250074A294 /* WorkshopsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */; };
-		EAFF9FD220434FEC0074A294 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD120434FEC0074A294 /* Photo.swift */; };
-		EAFF9FD4204350000074A294 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD3204350000074A294 /* Geometry.swift */; };
-		EAFF9FD62043500D0074A294 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD52043500D0074A294 /* OpeningHours.swift */; };
 		EAFF9FDA20438DD70074A294 /* ListCarWorkshopsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */; };
 		EAFF9FDC20438E650074A294 /* ListCarWorkshopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FDB20438E650074A294 /* ListCarWorkshopsInteractor.swift */; };
 		EAFF9FDF204390B10074A294 /* CarWorkshopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */; };
@@ -64,9 +61,6 @@
 		EAFF9FCA2042138B0074A294 /* CarWorkshopsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopsDetailViewController.swift; sourceTree = "<group>"; };
 		EAFF9FCC204214000074A294 /* ListCarWorkshopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopPresenter.swift; sourceTree = "<group>"; };
 		EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsGateway.swift; sourceTree = "<group>"; };
-		EAFF9FD120434FEC0074A294 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		EAFF9FD3204350000074A294 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
-		EAFF9FD52043500D0074A294 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
 		EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsFactory.swift; sourceTree = "<group>"; };
 		EAFF9FDB20438E650074A294 /* ListCarWorkshopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsInteractor.swift; sourceTree = "<group>"; };
 		EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsViewController.xib; sourceTree = "<group>"; };
@@ -182,11 +176,11 @@
 		EAFF9FB2203A59040074A294 /* CarWorkshops */ = {
 			isa = PBXGroup;
 			children = (
+				2F35123D203F031900342A83 /* Views */,
+				EAFF9FB6203A596E0074A294 /* ViewControllers */,
 				EAFF9FE6204398570074A294 /* Presenters */,
 				2F351246203F03C300342A83 /* Datasource */,
-				2F35123D203F031900342A83 /* Views */,
 				EAFF9FB7203A59830074A294 /* Entities */,
-				EAFF9FB6203A596E0074A294 /* ViewControllers */,
 			);
 			path = CarWorkshops;
 			sourceTree = "<group>";
@@ -232,9 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				2F351249203F045B00342A83 /* Workshops.swift */,
-				EAFF9FD120434FEC0074A294 /* Photo.swift */,
-				EAFF9FD3204350000074A294 /* Geometry.swift */,
-				EAFF9FD52043500D0074A294 /* OpeningHours.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -474,12 +465,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFF9FD220434FEC0074A294 /* Photo.swift in Sources */,
 				EAFF9FCD204214000074A294 /* ListCarWorkshopPresenter.swift in Sources */,
-				EAFF9FD62043500D0074A294 /* OpeningHours.swift in Sources */,
 				EAFF9FE5204396EC0074A294 /* CarWorkshopsTableViewCell.swift in Sources */,
 				EAFF9FD0204216250074A294 /* WorkshopsGateway.swift in Sources */,
-				EAFF9FD4204350000074A294 /* Geometry.swift in Sources */,
 				EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */,
 				2F35124C203F463700342A83 /* Resource.swift in Sources */,
 				EAFF9FDC20438E650074A294 /* ListCarWorkshopsInteractor.swift in Sources */,

@@ -1,6 +1,7 @@
 import Foundation
 
-public protocol ListCarWorkshopPresenter {
-    func displayCarworkshops(workshops: [Workshops])
+protocol ListCarWorkshopPresenter {
+    func displayCarworkshops(workshops: [Workshop])
     func displayError(message: String)
 }
+
