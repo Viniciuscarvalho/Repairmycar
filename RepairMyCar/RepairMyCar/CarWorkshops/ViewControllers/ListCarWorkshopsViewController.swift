@@ -2,11 +2,18 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-class ListCarWorkshopsViewController: UIViewController {
+protocol ListCarWorkshopsDelegate: class {
+    func didList(workshops: [Workshops])
+    func didGetImage(workshops: Workshops, image: UIImage)
+}
 
+class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDelegate {
+    
     var locationManager = CLLocationManager()
     private let searchRadius: Double = 500
     private let types = ["car_repair"]
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +28,13 @@ class ListCarWorkshopsViewController: UIViewController {
         }
     }
     
-    private func fetchNearbyWorkshops(coordinate: CLLocationCoordinate2D) {
-       
+    func didList(workshops: [Workshops]) {
+        <#code#>
     }
+    
+    func didGetImage(workshops: Workshops, image: UIImage) {
+        <#code#>
+    }
+    
 }
 

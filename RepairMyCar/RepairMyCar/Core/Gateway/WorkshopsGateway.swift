@@ -6,9 +6,9 @@ public protocol WorkshopsGateway {
 
 public class WorkshopsGatewayService: WorkshopsGateway {
     
-    var webService: WebService
+    private var webService: WebService
     
-    public init(webService: WebService){
+    public init(webService: WebService) {
         self.webService = webService
     }
     

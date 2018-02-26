@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2F35124A203F045C00342A83 /* Workshops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351249203F045B00342A83 /* Workshops.swift */; };
 		2F35124C203F463700342A83 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35124B203F463700342A83 /* Resource.swift */; };
-		2F351251203F77FA00342A83 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F351250203F77FA00342A83 /* Result.swift */; };
 		2F35125720407BD800342A83 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35125620407BD800342A83 /* WebService.swift */; };
 		638D0FDF6A49527B1F415033 /* Pods_RepairMyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */; };
 		EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9F92203A43C30074A294 /* AppDelegate.swift */; };
-		EAFF9F98203A43C40074A294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F96203A43C40074A294 /* Main.storyboard */; };
 		EAFF9F9A203A43C40074A294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F99203A43C40074A294 /* Assets.xcassets */; };
 		EAFF9F9D203A43C40074A294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9F9B203A43C40074A294 /* LaunchScreen.storyboard */; };
 		EAFF9FA8203A43C40074A294 /* RepairMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */; };
 		EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */; };
-		EAFF9FC320420D080074A294 /* WorkshopsDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FC220420D080074A294 /* WorkshopsDecoder.swift */; };
 		EAFF9FC6204212060074A294 /* CarworkshopsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FC5204212060074A294 /* CarworkshopsNavigation.swift */; };
 		EAFF9FC9204212550074A294 /* CarworkshopsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FC8204212550074A294 /* CarworkshopsRouter.swift */; };
 		EAFF9FCB2042138B0074A294 /* CarWorkshopsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCA2042138B0074A294 /* CarWorkshopsDetailViewController.swift */; };
 		EAFF9FCD204214000074A294 /* ListCarWorkshopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCC204214000074A294 /* ListCarWorkshopPresenter.swift */; };
 		EAFF9FD0204216250074A294 /* WorkshopsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */; };
+		EAFF9FD220434FEC0074A294 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD120434FEC0074A294 /* Photo.swift */; };
+		EAFF9FD4204350000074A294 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD3204350000074A294 /* Geometry.swift */; };
+		EAFF9FD62043500D0074A294 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD52043500D0074A294 /* OpeningHours.swift */; };
+		EAFF9FDA20438DD70074A294 /* ListCarWorkshopsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */; };
+		EAFF9FDC20438E650074A294 /* ListCarWorkshopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FDB20438E650074A294 /* ListCarWorkshopsInteractor.swift */; };
+		EAFF9FDF204390B10074A294 /* CarWorkshopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */; };
+		EAFF9FE1204391DE0074A294 /* CarWorkshopsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */; };
+		EAFF9FE3204394240074A294 /* CarWorkshopsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */; };
+		EAFF9FE5204396EC0074A294 /* CarWorkshopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +46,11 @@
 		238FD7B8522C9251D26B1800 /* Pods-RepairMyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.release.xcconfig"; sourceTree = "<group>"; };
 		2F351249203F045B00342A83 /* Workshops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workshops.swift; sourceTree = "<group>"; };
 		2F35124B203F463700342A83 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		2F351250203F77FA00342A83 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2F35125620407BD800342A83 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		68E49D04A278DB56B7368C85 /* Pods_RepairMyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepairMyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E306BA29259E99A02B0FC9F0 /* Pods-RepairMyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepairMyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepairMyCar/Pods-RepairMyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFF9F8F203A43C30074A294 /* RepairMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepairMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFF9F92203A43C30074A294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFF9F97203A43C40074A294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAFF9F99203A43C40074A294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFF9F9C203A43C40074A294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFF9F9E203A43C40074A294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,12 +58,20 @@
 		EAFF9FA7203A43C40074A294 /* RepairMyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairMyCarTests.swift; sourceTree = "<group>"; };
 		EAFF9FA9203A43C40074A294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFF9FBA203BB0B00074A294 /* ListCarWorkshopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsViewController.swift; sourceTree = "<group>"; };
-		EAFF9FC220420D080074A294 /* WorkshopsDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsDecoder.swift; sourceTree = "<group>"; };
 		EAFF9FC5204212060074A294 /* CarworkshopsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarworkshopsNavigation.swift; sourceTree = "<group>"; };
 		EAFF9FC8204212550074A294 /* CarworkshopsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarworkshopsRouter.swift; sourceTree = "<group>"; };
 		EAFF9FCA2042138B0074A294 /* CarWorkshopsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopsDetailViewController.swift; sourceTree = "<group>"; };
 		EAFF9FCC204214000074A294 /* ListCarWorkshopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopPresenter.swift; sourceTree = "<group>"; };
 		EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsGateway.swift; sourceTree = "<group>"; };
+		EAFF9FD120434FEC0074A294 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		EAFF9FD3204350000074A294 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		EAFF9FD52043500D0074A294 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
+		EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsFactory.swift; sourceTree = "<group>"; };
+		EAFF9FDB20438E650074A294 /* ListCarWorkshopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsInteractor.swift; sourceTree = "<group>"; };
+		EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsViewController.xib; sourceTree = "<group>"; };
+		EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsDetailViewController.xib; sourceTree = "<group>"; };
+		EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsTableViewCell.xib; sourceTree = "<group>"; };
+		EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,10 @@
 		2F35123D203F031900342A83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */,
+				EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */,
+				EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */,
+				EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,25 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				2F35124B203F463700342A83 /* Resource.swift */,
-				EAFF9FC220420D080074A294 /* WorkshopsDecoder.swift */,
 				2F35125620407BD800342A83 /* WebService.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		2F35124F203F77E900342A83 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2F351250203F77FA00342A83 /* Result.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		2F351252203F7F2100342A83 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
 			sourceTree = "<group>";
 		};
 		EAFF9F86203A43C30074A294 = {
@@ -160,6 +160,7 @@
 		EAFF9F91203A43C30074A294 /* RepairMyCar */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FDD204390180074A294 /* Core */,
 				EAFF9FB2203A59040074A294 /* CarWorkshops */,
 				EAFF9FB4203A59290074A294 /* Shared */,
 				EAFF9FB3203A59150074A294 /* Essentials */,
@@ -179,11 +180,8 @@
 		EAFF9FB2203A59040074A294 /* CarWorkshops */ = {
 			isa = PBXGroup;
 			children = (
-				EAFF9FCE204215FA0074A294 /* Gateway */,
-				EAFF9FC4204211A10074A294 /* Router */,
-				2F351252203F7F2100342A83 /* UseCases */,
+				EAFF9FE6204398570074A294 /* Presenters */,
 				2F351246203F03C300342A83 /* Datasource */,
-				2F351247203F03C300342A83 /* Presenters */,
 				2F35123D203F031900342A83 /* Views */,
 				EAFF9FB7203A59830074A294 /* Entities */,
 				EAFF9FB6203A596E0074A294 /* ViewControllers */,
@@ -205,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				EAFF9FC72042123B0074A294 /* Router */,
-				2F35124F203F77E900342A83 /* Helpers */,
 				2F351248203F03EC00342A83 /* Network */,
 				EAFF9FB5203A592F0074A294 /* Views */,
 			);
@@ -215,7 +212,6 @@
 		EAFF9FB5203A592F0074A294 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EAFF9F96203A43C40074A294 /* Main.storyboard */,
 				EAFF9F9B203A43C40074A294 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -234,6 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				2F351249203F045B00342A83 /* Workshops.swift */,
+				EAFF9FD120434FEC0074A294 /* Photo.swift */,
+				EAFF9FD3204350000074A294 /* Geometry.swift */,
+				EAFF9FD52043500D0074A294 /* OpeningHours.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -268,6 +267,41 @@
 				EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */,
 			);
 			path = Gateway;
+			sourceTree = "<group>";
+		};
+		EAFF9FD7204388AD0074A294 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF9FDB20438E650074A294 /* ListCarWorkshopsInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		EAFF9FD8204388B60074A294 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		EAFF9FDD204390180074A294 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF9FC4204211A10074A294 /* Router */,
+				EAFF9FCE204215FA0074A294 /* Gateway */,
+				EAFF9FD7204388AD0074A294 /* Interactors */,
+				EAFF9FD8204388B60074A294 /* Factories */,
+				2F351247203F03C300342A83 /* Presenters */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EAFF9FE6204398570074A294 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,9 +395,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFF9FDF204390B10074A294 /* CarWorkshopsViewController.xib in Resources */,
 				EAFF9F9D203A43C40074A294 /* LaunchScreen.storyboard in Resources */,
 				EAFF9F9A203A43C40074A294 /* Assets.xcassets in Resources */,
-				EAFF9F98203A43C40074A294 /* Main.storyboard in Resources */,
+				EAFF9FE1204391DE0074A294 /* CarWorkshopsDetailViewController.xib in Resources */,
+				EAFF9FE3204394240074A294 /* CarWorkshopsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,15 +471,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFF9FD220434FEC0074A294 /* Photo.swift in Sources */,
 				EAFF9FCD204214000074A294 /* ListCarWorkshopPresenter.swift in Sources */,
+				EAFF9FD62043500D0074A294 /* OpeningHours.swift in Sources */,
+				EAFF9FE5204396EC0074A294 /* CarWorkshopsTableViewCell.swift in Sources */,
 				EAFF9FD0204216250074A294 /* WorkshopsGateway.swift in Sources */,
-				2F351251203F77FA00342A83 /* Result.swift in Sources */,
-				EAFF9FC320420D080074A294 /* WorkshopsDecoder.swift in Sources */,
+				EAFF9FD4204350000074A294 /* Geometry.swift in Sources */,
 				EAFF9FBB203BB0B00074A294 /* ListCarWorkshopsViewController.swift in Sources */,
 				2F35124C203F463700342A83 /* Resource.swift in Sources */,
+				EAFF9FDC20438E650074A294 /* ListCarWorkshopsInteractor.swift in Sources */,
 				2F35125720407BD800342A83 /* WebService.swift in Sources */,
 				EAFF9FC6204212060074A294 /* CarworkshopsNavigation.swift in Sources */,
 				EAFF9FC9204212550074A294 /* CarworkshopsRouter.swift in Sources */,
+				EAFF9FDA20438DD70074A294 /* ListCarWorkshopsFactory.swift in Sources */,
 				EAFF9FCB2042138B0074A294 /* CarWorkshopsDetailViewController.swift in Sources */,
 				EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */,
 				2F35124A203F045C00342A83 /* Workshops.swift in Sources */,
@@ -469,14 +509,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EAFF9F96203A43C40074A294 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAFF9F97203A43C40074A294 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EAFF9F9B203A43C40074A294 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
