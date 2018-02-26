@@ -30,6 +30,7 @@
 		EAFF9FE1204391DE0074A294 /* CarWorkshopsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */; };
 		EAFF9FE3204394240074A294 /* CarWorkshopsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */; };
 		EAFF9FE5204396EC0074A294 /* CarWorkshopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */; };
+		EAFF9FE820439A960074A294 /* CarWorkshopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FE720439A960074A294 /* CarWorkshopPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsDetailViewController.xib; sourceTree = "<group>"; };
 		EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsTableViewCell.xib; sourceTree = "<group>"; };
 		EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopsTableViewCell.swift; sourceTree = "<group>"; };
+		EAFF9FE720439A960074A294 /* CarWorkshopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 		EAFF9FE6204398570074A294 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF9FE720439A960074A294 /* CarWorkshopPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				EAFF9FDA20438DD70074A294 /* ListCarWorkshopsFactory.swift in Sources */,
 				EAFF9FCB2042138B0074A294 /* CarWorkshopsDetailViewController.swift in Sources */,
 				EAFF9F93203A43C30074A294 /* AppDelegate.swift in Sources */,
+				EAFF9FE820439A960074A294 /* CarWorkshopPresenter.swift in Sources */,
 				2F35124A203F045C00342A83 /* Workshops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
