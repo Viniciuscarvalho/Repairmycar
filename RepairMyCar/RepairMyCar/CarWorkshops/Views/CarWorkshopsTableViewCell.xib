@@ -18,7 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="350" id="Vmy-JX-liO" customClass="MovieTableViewCell" customModule="Cinemaker" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="350" id="Vmy-JX-liO" customClass="CarWorkshopsTableViewCell" customModule="RepairMyCar" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vmy-JX-liO" id="8aZ-zQ-hbl">
@@ -28,30 +28,6 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-zJ-unz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="347"/>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqf-vH-Hcf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="347"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie" translatesAutoresizingMaskIntoConstraints="NO" id="X0g-LH-o6Q">
-                                <rect key="frame" x="135" y="149" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="PuW-E8-4HE"/>
-                                    <constraint firstAttribute="height" constant="50" id="lKq-u6-0al"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Opening Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-1G-vwu">
-                                <rect key="frame" x="21" y="320" width="100" height="16"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.38545659510000002" green="0.38927299710000002" blue="0.38927299710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="X0g-LH-o6Q" firstAttribute="centerX" secondItem="Oqf-vH-Hcf" secondAttribute="centerX" id="Bi5-ae-TP6"/>
-                            <constraint firstItem="X0g-LH-o6Q" firstAttribute="centerY" secondItem="Oqf-vH-Hcf" secondAttribute="centerY" id="F8x-rB-Ak9"/>
-                            <constraint firstItem="v5K-1G-vwu" firstAttribute="leading" secondItem="Oqf-vH-Hcf" secondAttribute="leading" constant="21" id="MHj-76-3eR"/>
-                        </constraints>
-                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avaliação" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me1-aT-czZ">
                         <rect key="frame" x="244" y="320" width="55" height="16"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="13"/>
@@ -71,38 +47,41 @@
                             <constraint firstAttribute="height" constant="1" id="vHn-mP-avD"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aberto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4o-oz-MVD">
+                        <rect key="frame" x="21" y="318" width="42" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="P93-bh-hIR"/>
+                            <constraint firstAttribute="width" constant="42" id="gJ8-gN-8BC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Oqf-vH-Hcf" firstAttribute="top" secondItem="8aZ-zQ-hbl" secondAttribute="top" id="3XS-0x-Ltn"/>
                     <constraint firstItem="sFF-g6-v9v" firstAttribute="top" secondItem="slJ-GT-Qta" secondAttribute="bottom" constant="10" id="5H2-iI-es8"/>
-                    <constraint firstAttribute="bottom" secondItem="Oqf-vH-Hcf" secondAttribute="bottom" constant="3" id="7Hn-GP-1U7"/>
                     <constraint firstAttribute="bottomMargin" secondItem="me1-aT-czZ" secondAttribute="bottom" constant="3" id="D3X-Ae-Cb0"/>
-                    <constraint firstAttribute="trailing" secondItem="Oqf-vH-Hcf" secondAttribute="trailing" id="Duw-Zi-CBH"/>
                     <constraint firstAttribute="trailingMargin" secondItem="slJ-GT-Qta" secondAttribute="trailing" constant="5" id="LbE-be-dG8"/>
                     <constraint firstItem="IQa-zJ-unz" firstAttribute="leading" secondItem="8aZ-zQ-hbl" secondAttribute="leading" id="Ua6-fT-Qpi"/>
-                    <constraint firstItem="Oqf-vH-Hcf" firstAttribute="leading" secondItem="8aZ-zQ-hbl" secondAttribute="leading" id="XDZ-UV-xos"/>
-                    <constraint firstItem="me1-aT-czZ" firstAttribute="leading" secondItem="v5K-1G-vwu" secondAttribute="trailing" constant="123" id="Y27-hx-o1H"/>
                     <constraint firstItem="IQa-zJ-unz" firstAttribute="top" secondItem="8aZ-zQ-hbl" secondAttribute="top" id="bvc-WI-7jZ"/>
+                    <constraint firstItem="i4o-oz-MVD" firstAttribute="baseline" secondItem="me1-aT-czZ" secondAttribute="baseline" id="dtK-Ki-xMF"/>
                     <constraint firstAttribute="trailing" secondItem="IQa-zJ-unz" secondAttribute="trailing" id="hBW-Eh-7xe"/>
+                    <constraint firstItem="i4o-oz-MVD" firstAttribute="leading" secondItem="sFF-g6-v9v" secondAttribute="leading" id="hbf-bZ-GHN"/>
                     <constraint firstItem="slJ-GT-Qta" firstAttribute="leading" secondItem="8aZ-zQ-hbl" secondAttribute="leadingMargin" constant="5" id="pAN-vk-xVF"/>
                     <constraint firstItem="sFF-g6-v9v" firstAttribute="leading" secondItem="8aZ-zQ-hbl" secondAttribute="leadingMargin" constant="5" id="qNg-37-bfb"/>
                     <constraint firstAttribute="bottom" secondItem="IQa-zJ-unz" secondAttribute="bottom" constant="3" id="t1s-J5-JZO"/>
                     <constraint firstAttribute="trailingMargin" secondItem="sFF-g6-v9v" secondAttribute="trailing" constant="5" id="uMT-TQ-6AO"/>
-                    <constraint firstItem="v5K-1G-vwu" firstAttribute="top" secondItem="sFF-g6-v9v" secondAttribute="bottom" constant="10" id="xIe-IX-vxL"/>
                     <constraint firstItem="me1-aT-czZ" firstAttribute="top" secondItem="sFF-g6-v9v" secondAttribute="bottom" constant="10" id="xwo-iK-NqG"/>
                     <constraint firstAttribute="trailingMargin" secondItem="me1-aT-czZ" secondAttribute="trailing" constant="5" id="xyP-iD-PVf"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="movieBackdrop" destination="IQa-zJ-unz" id="2UB-xE-iXb"/>
-                <outlet property="movieBackdropPlaceholder" destination="Oqf-vH-Hcf" id="1NN-6A-6dW"/>
-                <outlet property="movieReleaseDate" destination="me1-aT-czZ" id="Pvg-vs-weD"/>
-                <outlet property="movieTitle" destination="slJ-GT-Qta" id="d2D-8Q-uDd"/>
+                <outlet property="carWorkshopsBackdrop" destination="IQa-zJ-unz" id="6eL-mz-Rm3"/>
+                <outlet property="carWorkshopsName" destination="slJ-GT-Qta" id="f7s-Q1-3tR"/>
+                <outlet property="carWorkshopsOpeningHour" destination="i4o-oz-MVD" id="5ZB-2X-fbq"/>
+                <outlet property="carWorkshopsRating" destination="me1-aT-czZ" id="yXu-EZ-TPT"/>
             </connections>
             <point key="canvasLocation" x="34" y="22"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Movie" width="16" height="16"/>
-    </resources>
 </document>

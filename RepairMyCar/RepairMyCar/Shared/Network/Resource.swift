@@ -2,8 +2,6 @@ import Foundation
 import UIKit
 import CoreLocation
 
-public typealias JSONDictionary = [String: AnyObject]
-
 public struct Resource<T: Codable> {
     
     public let url: URL
@@ -19,13 +17,11 @@ public struct Resource<T: Codable> {
 }
 
 public struct Resources {
-    
-    private static let baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
-    // let url = URL(string: "(baseUrl)location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&types=car_repair&key=\(googleApiKey)")
-    let carWorkshopsUrl = URL(string: "\(baseUrl)location=-23.6211766,-46.673661400000015&radius=500&types=car_repair&key=\(googleApiKey)")
-    
-    static func listCarWorkshops() -> Resource<WorkshopList> {
-        let carWorkshopsUrl = URL(string: "\(baseUrl)location=-23.6211766,-46.673661400000015&radius=500&types=car_repair&key=\(googleApiKey)")!
+    private static let baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"    
+    static func listCarWorkshops(by location: Location) -> Resource<WorkshopList> {
+        let carWorkshopsUrl = URL(string: "\(baseUrl)location=-\(location.lat),\(location.lng)&radius=500&types=car_repair&key=\(googleApiKey)")!
         return Resource<WorkshopList>(url: carWorkshopsUrl)
     }
 }
+
+

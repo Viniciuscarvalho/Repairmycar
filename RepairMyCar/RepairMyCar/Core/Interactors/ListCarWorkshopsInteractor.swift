@@ -4,19 +4,24 @@ public class ListCarWorkshopsInteractor {
     
     private var workshopsGateway: WorkshopsGateway
     private var presenter: ListCarWorkshopPresenter
+    private var userLocationGateway: UserLocationGateway
     
-    init(workshopsGateway: WorkshopsGateway, presenter: ListCarWorkshopPresenter) {
+    init(workshopsGateway: WorkshopsGateway, userLocationGateway: UserLocationGateway, presenter: ListCarWorkshopPresenter) {
         self.workshopsGateway = workshopsGateway
         self.presenter = presenter
+        self.userLocationGateway = userLocationGateway
     }
     
     public func list() {
-        workshopsGateway.list() { workshops, error in
+        let userLocation = userLocationGateway.getLocation()
+        workshopsGateway.list(by: userLocation) { workshops, error in
             if let workshops = workshops {
-                self.presenter.displayCarworkshops(workshops: workshops)
-            } else if let error = error {
-                self.presenter.displayError(message: error.localizedDescription)
+                let viewModels = workshops.map(WorkshopTransform.transform)
+                self.presenter.displayCarworkshops(workshops: viewModels)
+            } else {
+                self.presenter.displayError(message: error?.localizedDescription ?? "NOPE")
             }
+            
         }
     }
 }

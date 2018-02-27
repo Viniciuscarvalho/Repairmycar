@@ -1,7 +1,7 @@
 import Foundation
 
 protocol WorkshopsGateway {
-    func list(completion: @escaping ([Workshop]?, Error?) -> Void)
+    func list(by: Location, completion: @escaping ([Workshop]?, Error?) -> Void)
 }
 
 class WorkshopsGatewayService: WorkshopsGateway {
@@ -12,8 +12,8 @@ class WorkshopsGatewayService: WorkshopsGateway {
         self.webService = webService
     }
     
-    func list(completion: @escaping ([Workshop]?, Error?) -> Void) {
-        webService.load(resource: Resources.listCarWorkshops(), completion: { workshops, error in
+    func list(by userLocation: Location, completion: @escaping ([Workshop]?, Error?) -> Void) {
+        webService.load(resource: Resources.listCarWorkshops(by: userLocation), completion: { workshops, error in
             completion(workshops?.workshops, error)
         })
     }

@@ -10,7 +10,7 @@ class CarworkshopsNavigation: CarworkshopsRouter {
     }
     
     func root() {
-        let listCarWorkshopsViewController = ListCarWorkshopsViewController()
+        let listCarWorkshopsViewController = ListCarWorkshopsViewController(userLocationGateway: LocationManagerUserLocationGateway())
         addTitleNavigation(at: listCarWorkshopsViewController, with: "Car Workshops")
         navigationController.viewControllers = [listCarWorkshopsViewController]
     }

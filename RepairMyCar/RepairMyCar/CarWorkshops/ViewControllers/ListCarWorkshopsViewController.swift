@@ -3,36 +3,45 @@ import CoreLocation
 import GoogleMaps
 
 protocol ListCarWorkshopsDelegate: class {
-    func didList(workshops: [Workshop])
-    func didGetImage(workshops: Workshop, image: UIImage)
+    func didList(workshops: [CarWorkshopViewModel])
 }
 
-class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDelegate {
+final class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDelegate {
+    var userLocationGateway: UserLocationGateway!
     
-    var locationManager = CLLocationManager()
-    private let searchRadius: Double = 500
-    private let types = ["car_repair"]
-    
+    private var cellIdentifier = String(describing: CarWorkshopsTableViewCell.self)
+
     @IBOutlet weak var tableView: UITableView!
+    
+    private var tableViewDelegate: CarWorkshopDelegate? = nil
+    private var listCarWorkshopsInteractor: ListCarWorkshopsInteractor?
+    
+    init(userLocationGateway: UserLocationGateway) {
+        super.init(nibName: nil, bundle: nil)
+        self.userLocationGateway = userLocationGateway
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationServices()
+        configureCarWorkshopsInteractor()
     }
     
-    func locationServices() {
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.requestWhenInUseAuthorization()
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-        }
+    private func configureTableView() {
+        let cellNib = UINib(nibName: cellIdentifier, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: cellIdentifier)
+
+    }
+    private func configureCarWorkshopsInteractor() {
+        listCarWorkshopsInteractor = ListCarWorkshopsFactory.make(presenter: CarWorkshopPresenter(delegate: self))
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        listCarWorkshopsInteractor?.list()
     }
     
-    func didList(workshops: [Workshop]) {
-        
-    }
-    
-    func didGetImage(workshops: Workshop, image: UIImage) {
+    func didList(workshops: [CarWorkshopViewModel]) {
         
     }
     

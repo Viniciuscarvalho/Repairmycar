@@ -1,7 +1,7 @@
 import Foundation
 
 protocol ListCarWorkshopPresenter {
-    func displayCarworkshops(workshops: [Workshop])
+    func displayCarworkshops(workshops: [CarWorkshopViewModel])
     func displayError(message: String)
 }
 

@@ -11,7 +11,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarWorkshopsDetailViewController" customModule="RepairMyCar" customModuleProvider="target">
+            <connections>
+                <outlet property="carWorkshopBackdrop" destination="Pmi-yJ-V6t" id="SMj-kC-avf"/>
+                <outlet property="carWorkshopName" destination="7S5-m5-ZuP" id="5ZD-p6-CXy"/>
+                <outlet property="carWorkshopsVicinity" destination="hsN-BQ-uP3" id="k5W-j3-ZJa"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gaf-4U-G9j">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -20,75 +26,68 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pmi-yJ-V6t">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phC-7R-clK" userLabel="Divider">
+                    <rect key="frame" x="21" y="613" width="325" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BEV-Zk-VKb"/>
+                    </constraints>
+                </view>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAd-iN-dkN">
-                    <rect key="frame" x="0.0" y="394" width="375" height="273"/>
+                    <rect key="frame" x="0.0" y="561" width="375" height="106"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Yi-kE-8Uc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ff5-dn-C3d">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+                                <rect key="frame" x="0.0" y="163" width="375" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="9Xr-Zf-kyj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <vibrancyEffect>
                                     <blurEffect style="light"/>
                                 </vibrancyEffect>
                             </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficina do Marquinhos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-m5-ZuP">
+                                <rect key="frame" x="15" y="20" width="333" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua Vieira de Morais, 1205 - Campo Belo, São Paulo" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-BQ-uP3">
+                                <rect key="frame" x="15" y="67" width="333" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
+                                <color key="textColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="7S5-m5-ZuP" firstAttribute="leading" secondItem="hsN-BQ-uP3" secondAttribute="leading" id="JhN-qL-GVw"/>
+                            <constraint firstItem="7S5-m5-ZuP" firstAttribute="leading" secondItem="7Yi-kE-8Uc" secondAttribute="leadingMargin" constant="7" id="LbT-Bo-6Wg"/>
+                            <constraint firstItem="hsN-BQ-uP3" firstAttribute="top" secondItem="7S5-m5-ZuP" secondAttribute="bottom" constant="23" id="X8u-6q-Tvq"/>
+                            <constraint firstAttribute="bottom" secondItem="hsN-BQ-uP3" secondAttribute="bottom" constant="24" id="g0s-Sz-YLn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hsN-BQ-uP3" secondAttribute="trailing" constant="19" id="kVJ-aJ-Q9w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7S5-m5-ZuP" secondAttribute="trailing" constant="19" id="qP2-AL-kmf"/>
+                        </constraints>
                     </view>
                     <blurEffect style="light"/>
                 </visualEffectView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficina do Marquinhos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-m5-ZuP">
-                    <rect key="frame" x="21" y="404" width="333" height="24"/>
-                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                    <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCN-BR-3Ok">
-                    <rect key="frame" x="21" y="438" width="333" height="183"/>
-                    <string key="text">Underworld: Blood Wars follows Vampire death dealer, Selene, as she fends off brutal attacks from both the Lycan clan and the Vampire faction that betrayed her. With her only allies, David and his father Thomas, she must stop the eternal war between Lycans and Vampires, even if it means she has to make the ultimate sacrifice.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phC-7R-clK" userLabel="Divider">
-                    <rect key="frame" x="21" y="631" width="333" height="1"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="1" id="BEV-Zk-VKb"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/01/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-BQ-uP3">
-                    <rect key="frame" x="282" y="642" width="72" height="15"/>
-                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
-                    <color key="textColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="DAd-iN-dkN" firstAttribute="bottom" secondItem="Pmi-yJ-V6t" secondAttribute="bottom" id="2Z9-1Y-DM6"/>
                 <constraint firstAttribute="bottom" secondItem="DAd-iN-dkN" secondAttribute="bottom" id="FJT-vY-dB0"/>
-                <constraint firstAttribute="trailingMargin" secondItem="phC-7R-clK" secondAttribute="trailing" constant="5" id="Fkb-Jm-oOp"/>
-                <constraint firstItem="UCN-BR-3Ok" firstAttribute="top" secondItem="7S5-m5-ZuP" secondAttribute="bottom" constant="10" id="NEp-1S-ZcE"/>
+                <constraint firstAttribute="trailingMargin" secondItem="phC-7R-clK" secondAttribute="trailing" constant="13" id="Fkb-Jm-oOp"/>
                 <constraint firstItem="DAd-iN-dkN" firstAttribute="leading" secondItem="Pmi-yJ-V6t" secondAttribute="leading" id="QXG-7e-PyP"/>
                 <constraint firstItem="Pmi-yJ-V6t" firstAttribute="top" secondItem="gaf-4U-G9j" secondAttribute="top" id="YMz-D9-bso"/>
-                <constraint firstAttribute="trailingMargin" secondItem="hsN-BQ-uP3" secondAttribute="trailing" constant="5" id="Zcs-Ia-I84"/>
                 <constraint firstAttribute="trailing" secondItem="DAd-iN-dkN" secondAttribute="trailing" id="aTr-fJ-ErI"/>
                 <constraint firstItem="DAd-iN-dkN" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leading" id="bT1-5b-6Rt"/>
-                <constraint firstItem="UCN-BR-3Ok" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leadingMargin" constant="5" id="cW4-fH-CDL"/>
-                <constraint firstAttribute="trailingMargin" secondItem="7S5-m5-ZuP" secondAttribute="trailing" constant="5" id="e6O-js-ehk"/>
                 <constraint firstItem="phC-7R-clK" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leadingMargin" constant="5" id="lQy-T4-qLx"/>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="top" secondItem="Q3P-XD-l74" secondAttribute="top" constant="374" id="oeb-Jh-6xB"/>
-                <constraint firstAttribute="bottom" secondItem="hsN-BQ-uP3" secondAttribute="bottom" constant="10" id="sZV-me-dzn"/>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="top" secondItem="7S5-m5-ZuP" secondAttribute="top" constant="-10" id="vh9-iq-yep"/>
-                <constraint firstItem="phC-7R-clK" firstAttribute="top" secondItem="UCN-BR-3Ok" secondAttribute="bottom" constant="10" id="wIM-lR-oL4"/>
+                <constraint firstItem="DAd-iN-dkN" firstAttribute="top" secondItem="Q3P-XD-l74" secondAttribute="top" constant="541" id="oeb-Jh-6xB"/>
                 <constraint firstItem="DAd-iN-dkN" firstAttribute="trailing" secondItem="Pmi-yJ-V6t" secondAttribute="trailing" id="xj1-du-vbD"/>
-                <constraint firstItem="7S5-m5-ZuP" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leadingMargin" constant="5" id="yyS-B2-JeX"/>
-                <constraint firstAttribute="trailingMargin" secondItem="UCN-BR-3Ok" secondAttribute="trailing" constant="5" id="zbb-zX-Uln"/>
+                <constraint firstItem="phC-7R-clK" firstAttribute="top" secondItem="Q3P-XD-l74" secondAttribute="top" constant="593" id="z9y-uB-kvS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q3P-XD-l74"/>
             <point key="canvasLocation" x="34.5" y="94.5"/>
