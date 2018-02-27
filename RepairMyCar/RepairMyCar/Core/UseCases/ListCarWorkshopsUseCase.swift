@@ -1,6 +1,6 @@
 import Foundation
 
-public class ListCarWorkshopsInteractor {
+public class ListCarWorkshopsUseCase {
     
     private var workshopsGateway: WorkshopsGateway
     private var presenter: ListCarWorkshopPresenter

@@ -2,7 +2,7 @@ import UIKit
 
 class CarWorkshopsDetailViewController: UIViewController {
     
-    private var workshops: Workshop?
+    private var workshops: CarWorkshopViewModel?
     
     @IBOutlet weak var carWorkshopBackdrop: UIImageView!
     @IBOutlet weak var carWorkshopName: UILabel!
@@ -16,7 +16,7 @@ class CarWorkshopsDetailViewController: UIViewController {
         fatalError("NOP")
     }
     
-    convenience init(workshops: Workshop) {
+    convenience init(workshops: CarWorkshopViewModel) {
         self.init()
         self.workshops = workshops
     }

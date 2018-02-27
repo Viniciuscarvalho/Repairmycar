@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class CarWorkshopsTableViewCell: UITableViewCell {
     
@@ -15,8 +16,8 @@ class CarWorkshopsTableViewCell: UITableViewCell {
         } else {
             carWorkshopsOpeningHour.text = "Fechado"
         }
-        
-        workshops.placePhotos
+        let url = URL(string:  workshops.placePhotos)
+        carWorkshopsBackdrop.kf.setImage(with: url)
     }
     
 }

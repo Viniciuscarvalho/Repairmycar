@@ -4,13 +4,16 @@ PODS:
   - GoogleMaps/Base (2.3.1)
   - GoogleMaps/Maps (2.3.1):
     - GoogleMaps/Base
+  - Kingfisher (4.6.1)
 
 DEPENDENCIES:
   - GoogleMaps
+  - Kingfisher (~> 4.0)
 
 SPEC CHECKSUMS:
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
 
-PODFILE CHECKSUM: 390f0f3e132ad788c40a07da2a3725d91f4a22f6
+PODFILE CHECKSUM: e4bbd3a487a796eb411c1604b63b1fe0ae70e987
 
 COCOAPODS: 1.4.0

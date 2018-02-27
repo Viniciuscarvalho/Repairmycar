@@ -2,6 +2,6 @@ import UIKit
 
 protocol CarworkshopsRouter {
     func root()
-    func carWorkshopsDetail(workshops: Workshop)
+    func carWorkshopsDetail(workshops: CarWorkshopViewModel)
 }
 

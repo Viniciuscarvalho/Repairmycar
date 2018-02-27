@@ -15,7 +15,7 @@ class CarworkshopsNavigation: CarworkshopsRouter {
         navigationController.viewControllers = [listCarWorkshopsViewController]
     }
     
-    func carWorkshopsDetail(workshops: Workshop) {
+    func carWorkshopsDetail(workshops: CarWorkshopViewModel) {
         let carWorkshopsDetailViewController = CarWorkshopsDetailViewController(workshops: workshops)
         navigationController.pushViewController(carWorkshopsDetailViewController, animated: true)
     }
