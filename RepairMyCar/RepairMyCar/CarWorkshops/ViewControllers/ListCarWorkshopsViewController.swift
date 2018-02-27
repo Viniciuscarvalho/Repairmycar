@@ -18,20 +18,20 @@ final class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDe
         cell.configure(workshops: carWorkshops)
     }
     
-    private var listCarWorkshopsInteractor: ListCarWorkshopsUseCase?
+    private var listCarWorkshopsUseCase: ListCarWorkshopsUseCase?
     
     init(userLocationGateway: UserLocationGateway) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "ListCarWorkshopsViewController", bundle: nil)
         self.userLocationGateway = userLocationGateway
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureCarWorkshopsInteractor()
+        configureCarWorkshopsUseCase()
         configureTableView()
     }
     
@@ -42,10 +42,10 @@ final class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDe
         configureTableViewDelegate()
 
     }
-    private func configureCarWorkshopsInteractor() {
-        listCarWorkshopsInteractor = ListCarWorkshopsFactory.make(presenter: CarWorkshopPresenter(delegate: self))
+    private func configureCarWorkshopsUseCase() {
+        listCarWorkshopsUseCase = ListCarWorkshopsFactory.make(presenter: CarWorkshopPresenter(delegate: self))
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        listCarWorkshopsInteractor?.list()
+        listCarWorkshopsUseCase?.list()
     }
     
     private func configureTableViewDatasource() {

@@ -81,7 +81,7 @@
                 <outlet property="carWorkshopsOpeningHour" destination="i4o-oz-MVD" id="5ZB-2X-fbq"/>
                 <outlet property="carWorkshopsRating" destination="me1-aT-czZ" id="yXu-EZ-TPT"/>
             </connections>
-            <point key="canvasLocation" x="34" y="22"/>
+            <point key="canvasLocation" x="-395" y="16"/>
         </tableViewCell>
     </objects>
 </document>

@@ -27,7 +27,7 @@
 		EAFF9FD0204216250074A294 /* WorkshopsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */; };
 		EAFF9FDA20438DD70074A294 /* ListCarWorkshopsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */; };
 		EAFF9FDC20438E650074A294 /* ListCarWorkshopsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FDB20438E650074A294 /* ListCarWorkshopsUseCase.swift */; };
-		EAFF9FDF204390B10074A294 /* CarWorkshopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */; };
+		EAFF9FDF204390B10074A294 /* ListCarWorkshopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FDE204390B10074A294 /* ListCarWorkshopsViewController.xib */; };
 		EAFF9FE1204391DE0074A294 /* CarWorkshopsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */; };
 		EAFF9FE3204394240074A294 /* CarWorkshopsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */; };
 		EAFF9FE5204396EC0074A294 /* CarWorkshopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */; };
@@ -71,7 +71,7 @@
 		EAFF9FCF204216250074A294 /* WorkshopsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsGateway.swift; sourceTree = "<group>"; };
 		EAFF9FD920438DD70074A294 /* ListCarWorkshopsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsFactory.swift; sourceTree = "<group>"; };
 		EAFF9FDB20438E650074A294 /* ListCarWorkshopsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarWorkshopsUseCase.swift; sourceTree = "<group>"; };
-		EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsViewController.xib; sourceTree = "<group>"; };
+		EAFF9FDE204390B10074A294 /* ListCarWorkshopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCarWorkshopsViewController.xib; sourceTree = "<group>"; };
 		EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsDetailViewController.xib; sourceTree = "<group>"; };
 		EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarWorkshopsTableViewCell.xib; sourceTree = "<group>"; };
 		EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWorkshopsTableViewCell.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		2F35123D203F031900342A83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EAFF9FDE204390B10074A294 /* CarWorkshopsViewController.xib */,
+				EAFF9FDE204390B10074A294 /* ListCarWorkshopsViewController.xib */,
 				EAFF9FE0204391DE0074A294 /* CarWorkshopsDetailViewController.xib */,
 				EAFF9FE2204394240074A294 /* CarWorkshopsTableViewCell.xib */,
 				EAFF9FE4204396EC0074A294 /* CarWorkshopsTableViewCell.swift */,
@@ -417,7 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFF9FDF204390B10074A294 /* CarWorkshopsViewController.xib in Resources */,
+				EAFF9FDF204390B10074A294 /* ListCarWorkshopsViewController.xib in Resources */,
 				EAFF9F9D203A43C40074A294 /* LaunchScreen.storyboard in Resources */,
 				EAFF9F9A203A43C40074A294 /* Assets.xcassets in Resources */,
 				EAFF9FE1204391DE0074A294 /* CarWorkshopsDetailViewController.xib in Resources */,
