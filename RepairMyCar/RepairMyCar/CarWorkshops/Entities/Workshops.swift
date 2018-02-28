@@ -9,21 +9,21 @@ struct WorkshopList: Codable {
     }
 }
 
-struct CarWorkshopViewModel {
+public struct CarWorkshopViewModel {
     let name: String
-    let openingHours: OpeningHours
-    let photos: Photo
-    let placePhotos: String
-    let rating: Double
+    let openingHours: OpeningHours?
+    let photos: Photo?
+    let placePhotos: String?
+    let rating: Double?
     let vicinity: String
 }
 
 struct Workshop: Codable {
     let geometry: Geometry
     let name: String
-    let openingHours: OpeningHours
-    let photos: [Photo]
-    let rating: Double
+    let openingHours: OpeningHours?
+    let photos: [Photo]?
+    let rating: Double?
     let reference: String
     let types: [String]
     let vicinity: String

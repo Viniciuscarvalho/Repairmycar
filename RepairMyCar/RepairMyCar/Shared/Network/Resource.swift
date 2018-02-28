@@ -10,8 +10,13 @@ public struct Resource<T: Codable> {
     public init(url: URL) {
         self.url = url
         self.parse = { data in
-            let json = try? JSONDecoder().decode(T.self, from: data)
-            return json
+            do {
+                let json = try JSONDecoder().decode(T.self, from: data)
+                return json
+            } catch {
+                print(error)
+            }
+            return nil
         }
     }
 }
@@ -19,7 +24,7 @@ public struct Resource<T: Codable> {
 public struct Resources {
     private static let baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"    
     static func listCarWorkshops(by location: Location) -> Resource<WorkshopList> {
-        let carWorkshopsUrl = URL(string:"\(baseUrl)location=\(location.lat),\(location.lng)&radius=500&types=car_repair&key=\(googleApiKey)")!
+        let carWorkshopsUrl = URL(string:"\(baseUrl)location=-23.621172,-46.673671&radius=500&types=car_repair&key=\(googleApiKey)")!
         return Resource<WorkshopList>(url: carWorkshopsUrl)
     }
 }

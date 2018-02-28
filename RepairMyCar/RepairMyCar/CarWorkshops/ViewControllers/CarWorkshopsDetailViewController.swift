@@ -8,17 +8,13 @@ class CarWorkshopsDetailViewController: UIViewController {
     @IBOutlet weak var carWorkshopName: UILabel!
     @IBOutlet weak var carWorkshopsVicinity: UILabel!
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    init(workshops: CarWorkshopViewModel) {
+        super.init(nibName: "CarWorkshopsDetailViewController", bundle: nil)
+        self.workshops = workshops
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("NOP")
-    }
-    
-    convenience init(workshops: CarWorkshopViewModel) {
-        self.init()
-        self.workshops = workshops
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {

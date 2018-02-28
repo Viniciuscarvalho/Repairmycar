@@ -10,13 +10,17 @@ class CarWorkshopsTableViewCell: UITableViewCell {
     
     func configure(workshops: CarWorkshopViewModel) {
         carWorkshopsName.text = workshops.name.uppercased()
-        carWorkshopsRating.text = NSString(format: "%.d", workshops.rating) as String
-        if workshops.openingHours.openNow == true {
+        carWorkshopsRating.text = NSString(format: "%.d", workshops.rating ?? 0) as String
+        if workshops.openingHours?.openNow == true {
             carWorkshopsOpeningHour.text = "Aberto"
         } else {
             carWorkshopsOpeningHour.text = "Fechado"
         }
-        let url = URL(string:  workshops.placePhotos)
+        guard let defaultImage = workshops.placePhotos else {
+            carWorkshopsBackdrop.image = UIImage(named: "default_image_car")
+            return
+        }
+        let url = URL(string:  defaultImage)
         carWorkshopsBackdrop.kf.setImage(with: url)
     }
     

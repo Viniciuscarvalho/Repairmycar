@@ -12,47 +12,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListCarWorkshopsViewController" customModule="RepairMyCar" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="Goq-nz-bEM" id="DyU-pv-eab"/>
-                <outlet property="view" destination="4Pp-G5-XIt" id="nCB-bO-6qk"/>
+                <outlet property="tableView" destination="Goq-nz-bEM" id="jgC-Hr-dbD"/>
+                <outlet property="view" destination="L6Q-Fn-BWn" id="6XV-Un-Ud0"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController nibName="ListCarWorkshopsViewController" id="1u0-xN-NSY" customClass="ListCarWorkshopsViewController" customModule="RepairMyCar" customModuleProvider="target">
-            <view key="view" contentMode="scaleToFill" id="78c-0J-ZZe">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-G5-XIt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Goq-nz-bEM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Goq-nz-bEM" firstAttribute="top" secondItem="4Pp-G5-XIt" secondAttribute="top" id="IZK-eW-oCT"/>
-                            <constraint firstAttribute="bottom" secondItem="Goq-nz-bEM" secondAttribute="bottom" id="OId-4c-aiy"/>
-                            <constraint firstAttribute="trailing" secondItem="Goq-nz-bEM" secondAttribute="trailing" id="dPZ-a3-jLw"/>
-                            <constraint firstItem="Goq-nz-bEM" firstAttribute="leading" secondItem="4Pp-G5-XIt" secondAttribute="leading" id="faj-nI-ysa"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Oog-GX-dey"/>
-                    </view>
-                </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                <constraints>
-                    <constraint firstItem="4Pp-G5-XIt" firstAttribute="top" secondItem="78c-0J-ZZe" secondAttribute="top" id="MoU-SJ-yOO"/>
-                    <constraint firstItem="4Pp-G5-XIt" firstAttribute="bottom" secondItem="Llv-2t-enp" secondAttribute="bottom" id="PFK-0Q-rqW"/>
-                    <constraint firstItem="4Pp-G5-XIt" firstAttribute="leading" secondItem="Llv-2t-enp" secondAttribute="leading" id="QYf-V3-8d1"/>
-                    <constraint firstItem="4Pp-G5-XIt" firstAttribute="trailing" secondItem="Llv-2t-enp" secondAttribute="trailing" id="UIn-uc-oif"/>
-                </constraints>
-                <viewLayoutGuide key="safeArea" id="Llv-2t-enp"/>
-            </view>
-            <connections>
-                <outlet property="tableView" destination="Goq-nz-bEM" id="Mdg-uH-BC5"/>
-            </connections>
-            <point key="canvasLocation" x="-227" y="52"/>
-        </viewController>
+        <view contentMode="scaleToFill" id="L6Q-Fn-BWn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Goq-nz-bEM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="mKh-DI-kMe"/>
+            <point key="canvasLocation" x="-189" y="195"/>
+        </view>
     </objects>
 </document>

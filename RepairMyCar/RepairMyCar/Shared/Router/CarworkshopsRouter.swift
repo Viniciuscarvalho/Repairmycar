@@ -1,6 +1,6 @@
 import UIKit
 
-protocol CarworkshopsRouter {
+public protocol CarworkshopsRouter {
     func root()
     func carWorkshopsDetail(workshops: CarWorkshopViewModel)
 }

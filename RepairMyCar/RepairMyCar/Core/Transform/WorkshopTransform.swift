@@ -1,16 +1,22 @@
 import Foundation
+import UIKit
 
 class WorkshopTransform {
     
     static func transform( workshop: Workshop ) -> CarWorkshopViewModel {
-        let photo = workshop.photos.first!
-        let placePhotoUrl = WorkshopTransform.transformGoogleUrl(height: String(photo.height),
-                                                                 photoReference: photo.photoReference,
-                                                                 googleApiKey: googleApiKey)
+        var defaultImage: Photo? = nil
+        var photoRefWithUrl: String? = nil
+        
+        if let photo = workshop.photos {
+            defaultImage = photo.first
+            photoRefWithUrl = WorkshopTransform.transformGoogleUrl(height: String(describing: defaultImage?.height),
+                                                            photoReference: (defaultImage?.photoReference)!,
+                                                            googleApiKey: googleApiKey)
+        }
         return CarWorkshopViewModel(name: workshop.name,
                                     openingHours: workshop.openingHours,
-                                    photos: photo,
-                                    placePhotos: placePhotoUrl,
+                                    photos: defaultImage,
+                                    placePhotos: photoRefWithUrl,
                                     rating: workshop.rating,
                                     vicinity: workshop.vicinity)
     }
@@ -19,3 +25,4 @@ class WorkshopTransform {
         return "https://maps.googleapis.com/maps/api/place/photo?maxheight=\(height)&photoreference=\(photoReference)&key=\(googleApiKey)"
     }
 }
+

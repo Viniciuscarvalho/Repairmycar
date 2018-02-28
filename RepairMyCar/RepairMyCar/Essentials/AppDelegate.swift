@@ -14,13 +14,19 @@ let googleApiKey = "AIzaSyDciXEnQ8QlOC4c9XvdHpyMpQtqrTX7vWI"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow!
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey(googleApiKey)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = ListCarWorkshopsViewController(userLocationGateway: LocationManagerUserLocationGateway())
-        window.makeKeyAndVisible()
+        window?.makeKeyAndVisible()
+        
+        let navigationController = UINavigationController()
+        window?.rootViewController = navigationController
+        
+        CarworkshopsNavigation(navigationController: navigationController).root()
+        
         return true
     }
 
