@@ -19,7 +19,7 @@ public class ListCarWorkshopsUseCase {
                 let viewModels = workshops.map(WorkshopTransform.transform)
                 self.presenter.displayCarworkshops(workshops: viewModels)
             } else {
-                self.presenter.displayError(message: error?.localizedDescription ?? "NOPE")
+                self.presenter.displayError(message: error?.localizedDescription ?? "Don't pass on json parser")
             }
             
         }
