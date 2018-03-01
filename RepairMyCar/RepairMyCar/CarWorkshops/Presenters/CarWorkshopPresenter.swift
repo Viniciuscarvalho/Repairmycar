@@ -17,6 +17,5 @@ class CarWorkshopPresenter: ListCarWorkshopPresenter {
     }
     
     func displayError(message: String) {
-        
     }
 }

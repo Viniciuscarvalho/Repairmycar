@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "default_image_car.png",
+      "filename" : "default_image_workshops.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "default_image_workshops@2x.png",
       "scale" : "2x"
     },
     {

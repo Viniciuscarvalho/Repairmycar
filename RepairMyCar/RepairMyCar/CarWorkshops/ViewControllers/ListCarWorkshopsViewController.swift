@@ -15,7 +15,7 @@ final class ListCarWorkshopsViewController: UIViewController, ListCarWorkshopsDe
     var userLocationGateway: UserLocationGateway!
     private var tableViewDelegate: CarWorkshopDelegate? = nil
     private lazy var tableViewDatasource = CarWorkshopsDatasource<CarWorkshopViewModel, CarWorkshopsTableViewCell> { (carWorkshops, cell) in
-        cell.configure(workshops: carWorkshops)
+        cell.configure(workshop: carWorkshops)
     }
     
     private var listCarWorkshopsUseCase: ListCarWorkshopsUseCase?

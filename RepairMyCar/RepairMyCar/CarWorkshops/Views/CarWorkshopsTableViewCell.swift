@@ -8,15 +8,12 @@ class CarWorkshopsTableViewCell: UITableViewCell {
     @IBOutlet weak var carWorkshopsName: UILabel!
     @IBOutlet weak var carWorkshopsOpeningHour: UILabel!
     
-    func configure(workshops: CarWorkshopViewModel) {
-        carWorkshopsName.text = workshops.name.uppercased()
-        carWorkshopsRating.text = NSString(format: "%.d", workshops.rating ?? 0) as String
-        if workshops.openingHours?.openNow == true {
-            carWorkshopsOpeningHour.text = "Aberto"
-        } else {
-            carWorkshopsOpeningHour.text = "Fechado"
-        }
-        guard let defaultImage = workshops.placePhotos else {
+    func configure(workshop: CarWorkshopViewModel) {
+        carWorkshopsName.text = workshop.name.uppercased()
+        carWorkshopsRating.text = workshop.rating
+        carWorkshopsOpeningHour.text = workshop.workshopStatus.rawValue
+        
+        guard let defaultImage = workshop.placePhotos else {
             carWorkshopsBackdrop.image = UIImage(named: "default_image_car")
             return
         }

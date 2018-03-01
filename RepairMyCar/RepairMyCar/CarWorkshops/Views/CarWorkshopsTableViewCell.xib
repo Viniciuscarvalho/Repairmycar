@@ -41,10 +41,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aberto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4o-oz-MVD">
-                        <rect key="frame" x="21" y="318" width="42" height="18"/>
+                        <rect key="frame" x="21" y="318" width="65" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="P93-bh-hIR"/>
-                            <constraint firstAttribute="width" constant="42" id="gJ8-gN-8BC"/>
+                            <constraint firstAttribute="width" constant="65" id="gJ8-gN-8BC"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                         <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,6 +58,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.57174016497461921" green="0.57174016497461921" blue="0.57174016497461921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="i4o-oz-MVD" firstAttribute="top" secondItem="sFF-g6-v9v" secondAttribute="bottom" constant="8" id="0qv-kj-pTB"/>
                     <constraint firstItem="sFF-g6-v9v" firstAttribute="top" secondItem="slJ-GT-Qta" secondAttribute="bottom" constant="10" id="5H2-iI-es8"/>
@@ -84,7 +85,7 @@
                 <outlet property="carWorkshopsOpeningHour" destination="i4o-oz-MVD" id="5ZB-2X-fbq"/>
                 <outlet property="carWorkshopsRating" destination="me1-aT-czZ" id="yXu-EZ-TPT"/>
             </connections>
-            <point key="canvasLocation" x="-659" y="-51"/>
+            <point key="canvasLocation" x="-768.5" y="-75"/>
         </tableViewCell>
     </objects>
 </document>
