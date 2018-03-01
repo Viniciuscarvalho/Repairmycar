@@ -37,31 +37,3 @@ struct Workshop: Codable {
     }
 }
 
-struct Geometry: Codable {
-    let location: Location
-}
-
-struct Location: Codable {
-    let lat, lng: Double
-}
-
-struct OpeningHours: Codable {
-    let openNow: Bool
-    
-    enum CodingKeys: String, CodingKey {
-        case openNow = "open_now"
-    }
-}
-
-struct Photo: Codable {
-    let photoReference: String
-    let height: Int
-    let width: Int
-    
-    enum CodingKeys: String, CodingKey {
-        case photoReference = "photo_reference"
-        case height
-        case width
-    }
-}
-

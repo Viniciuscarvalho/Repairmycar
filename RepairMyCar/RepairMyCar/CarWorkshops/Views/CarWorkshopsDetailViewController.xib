@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,65 +26,69 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pmi-yJ-V6t">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phC-7R-clK" userLabel="Divider">
-                    <rect key="frame" x="21" y="613" width="325" height="1"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="1" id="BEV-Zk-VKb"/>
-                    </constraints>
-                </view>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAd-iN-dkN">
-                    <rect key="frame" x="0.0" y="561" width="375" height="106"/>
+                    <rect key="frame" x="0.0" y="522" width="375" height="145"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Yi-kE-8Uc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ff5-dn-C3d">
-                                <rect key="frame" x="0.0" y="163" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="163" width="375" height="39"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="9Xr-Zf-kyj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <vibrancyEffect>
                                     <blurEffect style="light"/>
                                 </vibrancyEffect>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oficina do Marquinhos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-m5-ZuP">
-                                <rect key="frame" x="21" y="15" width="333" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                                <color key="textColor" red="0.35787355900000001" green="0.31804859639999999" blue="0.28429049249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rua Vieira de Morais, 1205 - Campo Belo, São Paulo" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-BQ-uP3">
-                                <rect key="frame" x="21" y="70" width="319.5" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
-                                <color key="textColor" red="0.35787355900000001" green="0.31804859639999999" blue="0.28429049249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                     </view>
-                    <blurEffect style="light"/>
+                    <blurEffect style="extraLight"/>
                 </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficina do Marquinhos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-m5-ZuP">
+                    <rect key="frame" x="16" y="554.5" width="343" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                    <color key="textColor" red="0.28717875479999999" green="0.2513233721" blue="0.22176775339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua Vieira de Morais, 1205 - Campo Belo, São Paulo" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-BQ-uP3">
+                    <rect key="frame" x="16" y="617.5" width="343" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                    <color key="textColor" red="0.28717875479999999" green="0.2513233721" blue="0.22176775339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phC-7R-clK" userLabel="Divider">
+                    <rect key="frame" x="21" y="594.5" width="325" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BEV-Zk-VKb"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="bottom" secondItem="Pmi-yJ-V6t" secondAttribute="bottom" id="2Z9-1Y-DM6"/>
-                <constraint firstAttribute="bottom" secondItem="DAd-iN-dkN" secondAttribute="bottom" id="FJT-vY-dB0"/>
-                <constraint firstAttribute="trailingMargin" secondItem="phC-7R-clK" secondAttribute="trailing" constant="13" id="Fkb-Jm-oOp"/>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="leading" secondItem="Pmi-yJ-V6t" secondAttribute="leading" id="QXG-7e-PyP"/>
-                <constraint firstItem="Pmi-yJ-V6t" firstAttribute="top" secondItem="gaf-4U-G9j" secondAttribute="top" id="YMz-D9-bso"/>
-                <constraint firstAttribute="trailing" secondItem="DAd-iN-dkN" secondAttribute="trailing" id="aTr-fJ-ErI"/>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leading" id="bT1-5b-6Rt"/>
-                <constraint firstItem="phC-7R-clK" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leadingMargin" constant="5" id="lQy-T4-qLx"/>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="top" secondItem="Q3P-XD-l74" secondAttribute="top" constant="541" id="oeb-Jh-6xB"/>
-                <constraint firstItem="DAd-iN-dkN" firstAttribute="trailing" secondItem="Pmi-yJ-V6t" secondAttribute="trailing" id="xj1-du-vbD"/>
-                <constraint firstItem="phC-7R-clK" firstAttribute="top" secondItem="Q3P-XD-l74" secondAttribute="top" constant="593" id="z9y-uB-kvS"/>
+                <constraint firstItem="Q3P-XD-l74" firstAttribute="trailing" secondItem="7S5-m5-ZuP" secondAttribute="trailing" constant="16" id="6z2-Ac-6Qa"/>
+                <constraint firstItem="phC-7R-clK" firstAttribute="leading" secondItem="gaf-4U-G9j" secondAttribute="leading" constant="21" id="JQ5-7w-tMc"/>
+                <constraint firstItem="Pmi-yJ-V6t" firstAttribute="top" secondItem="gaf-4U-G9j" secondAttribute="top" id="JdB-xL-qWC"/>
+                <constraint firstItem="hsN-BQ-uP3" firstAttribute="top" secondItem="phC-7R-clK" secondAttribute="bottom" constant="22" id="PA3-Jj-Cda"/>
+                <constraint firstItem="7S5-m5-ZuP" firstAttribute="leading" secondItem="Q3P-XD-l74" secondAttribute="leading" constant="16" id="Ug9-Gf-4xo"/>
+                <constraint firstItem="Pmi-yJ-V6t" firstAttribute="leading" secondItem="Q3P-XD-l74" secondAttribute="leading" id="VCH-sw-Kl2"/>
+                <constraint firstItem="DAd-iN-dkN" firstAttribute="bottom" secondItem="Q3P-XD-l74" secondAttribute="bottom" id="cNW-8S-6yU"/>
+                <constraint firstItem="Q3P-XD-l74" firstAttribute="trailing" secondItem="hsN-BQ-uP3" secondAttribute="trailing" constant="16" id="dy5-ZO-Xrz"/>
+                <constraint firstItem="Pmi-yJ-V6t" firstAttribute="bottom" secondItem="Q3P-XD-l74" secondAttribute="bottom" id="g69-aY-4bz"/>
+                <constraint firstItem="phC-7R-clK" firstAttribute="centerY" secondItem="DAd-iN-dkN" secondAttribute="centerY" id="gd0-xm-0XN"/>
+                <constraint firstItem="Q3P-XD-l74" firstAttribute="bottom" secondItem="hsN-BQ-uP3" secondAttribute="bottom" constant="16" id="jMQ-d2-NGQ"/>
+                <constraint firstItem="phC-7R-clK" firstAttribute="top" secondItem="7S5-m5-ZuP" secondAttribute="bottom" constant="16" id="kbb-6W-v24"/>
+                <constraint firstItem="Pmi-yJ-V6t" firstAttribute="trailing" secondItem="Q3P-XD-l74" secondAttribute="trailing" id="lZH-lc-sQJ"/>
+                <constraint firstItem="DAd-iN-dkN" firstAttribute="leading" secondItem="Pmi-yJ-V6t" secondAttribute="leading" id="mnz-zl-zLh"/>
+                <constraint firstAttribute="trailing" secondItem="phC-7R-clK" secondAttribute="trailing" constant="29" id="pjT-3F-auK"/>
+                <constraint firstItem="hsN-BQ-uP3" firstAttribute="leading" secondItem="Q3P-XD-l74" secondAttribute="leading" constant="16" id="w4u-qX-dmQ"/>
+                <constraint firstItem="DAd-iN-dkN" firstAttribute="trailing" secondItem="Pmi-yJ-V6t" secondAttribute="trailing" id="xHu-he-ftO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q3P-XD-l74"/>
-            <point key="canvasLocation" x="34.5" y="94.5"/>
+            <point key="canvasLocation" x="-109" y="77"/>
         </view>
     </objects>
 </document>

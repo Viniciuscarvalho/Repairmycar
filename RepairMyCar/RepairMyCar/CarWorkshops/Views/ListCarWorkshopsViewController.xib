@@ -21,15 +21,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Goq-nz-bEM">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Goq-nz-bEM">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Goq-nz-bEM" firstAttribute="leading" secondItem="mKh-DI-kMe" secondAttribute="leading" id="NcC-u6-28V"/>
+                <constraint firstItem="Goq-nz-bEM" firstAttribute="top" secondItem="L6Q-Fn-BWn" secondAttribute="top" id="VcP-Sy-iLe"/>
+                <constraint firstItem="Goq-nz-bEM" firstAttribute="bottom" secondItem="mKh-DI-kMe" secondAttribute="bottom" id="g85-4u-fSQ"/>
+                <constraint firstItem="Goq-nz-bEM" firstAttribute="trailing" secondItem="mKh-DI-kMe" secondAttribute="trailing" id="osp-Iv-5YU"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="mKh-DI-kMe"/>
-            <point key="canvasLocation" x="-189" y="195"/>
+            <point key="canvasLocation" x="-17" y="12"/>
         </view>
     </objects>
 </document>

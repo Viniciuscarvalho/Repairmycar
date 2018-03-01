@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class CarWorkshopsDetailViewController: UIViewController {
     
@@ -26,6 +27,12 @@ class CarWorkshopsDetailViewController: UIViewController {
         guard let workshops = workshops else { return }
         carWorkshopName.text = workshops.name
         carWorkshopsVicinity.text = workshops.vicinity
+        guard let defaultImage = workshops.placePhotos else {
+            carWorkshopBackdrop.image = UIImage(named: "default_image_car")
+            return
+        }
+        let url = URL(string: defaultImage)
+        carWorkshopBackdrop.kf.setImage(with: url)
     }
     
 }
