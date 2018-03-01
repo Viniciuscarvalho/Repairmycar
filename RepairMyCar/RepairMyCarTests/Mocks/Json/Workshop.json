@@ -1,0 +1,51 @@
+{
+    "results": [
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6224988,
+                "lng": -46.6744731
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6212291697085,
+                "lng": -46.6732008697085
+                },
+                "southwest": {
+                "lat": -23.62392713029151,
+                "lng": -46.67589883029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "4e687ef251b0238dda06f9e9ad2abac9dedcaf0b",
+                "name": "Eleva Vidros Elétricos",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 550,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/110483026169073766570/photos\">Eleva Vidros Elétricos</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAH0R3c-RYTSJ-dKI8dutl_2iMxaAJoXhvdkvO83a_N_9JloXc0SwwoK-lwPdEAV1pZ60kfb9cPc3E221PvPTsNV7j4Sw3fTuKIbA7fAfYCnE1GqwQVZnuy1v-g4HOv5StEhA0aqq0BNgolAR_uq2HRChrGhSilHpc2iV2msmMx-4QO0Tzk0TD1w",
+                           "width": 1920
+                           }
+                           ],
+                "place_id": "ChIJHwmOxp5QzpQRIx2R9XXBcA0",
+                "rating": 4.4,
+                "reference": "CmRRAAAAZD1aDnatcvDqZMPzg1sfCvBrsSVOr_ignBDjoW__YzF0XwOuSDhV32CqdiMVVQTIHLNKiKekCjfiEqVxePFjW83kbX5jPw5L4gDayH1szhftROVYqKBIp0HFWSBu6UaSEhAuWdrfYVeCkcne8TMVLKViGhRedKQ47F7zWaRJ8lGPYr4bhSPQEg",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "home_goods_store",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Édison, 855 - Campo Belo, São Paulo"
+                }
+            ]
+}

@@ -9,7 +9,7 @@ class WorkshopTransform {
         
         if let photo = workshop.photos {
             defaultImage = photo.first
-            photoRefWithUrl = WorkshopTransform.transformGoogleUrl(height: String(describing: defaultImage?.height),
+            photoRefWithUrl = WorkshopTransform.transformGoogleUrl(height: "\(defaultImage?.height ?? 550)",
                                                             photoReference: (defaultImage?.photoReference)!,
                                                             googleApiKey: googleApiKey)
         }
