@@ -5,6 +5,6 @@ public struct CarWorkshopViewModel {
     let workshopStatus: WorkshopStatus
     let photos: Photo?
     let placePhotos: String?
-    let rating: String
+    let rating: Double?
     let vicinity: String
 }

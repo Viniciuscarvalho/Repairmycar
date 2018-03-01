@@ -10,7 +10,7 @@ class CarWorkshopsTableViewCell: UITableViewCell {
     
     func configure(workshop: CarWorkshopViewModel) {
         carWorkshopsName.text = workshop.name.uppercased()
-        carWorkshopsRating.text = workshop.rating
+        carWorkshopsRating.text = String(format: "%.2f", workshop.rating ?? 0)
         carWorkshopsOpeningHour.text = workshop.workshopStatus.rawValue
         
         guard let defaultImage = workshop.placePhotos else {

@@ -15,9 +15,8 @@ final class WorkshopTransform {
     static func transform( workshop: Workshop ) -> CarWorkshopViewModel {
         var defaultImage: Photo? = nil
         var photoRefWithUrl: String? = nil
-        var isOpen = workshop.openingHours?.openNow ?? false
+        let isOpen = workshop.openingHours?.openNow ?? false
         
-        let rating = NSString(format: "%.d", workshop.rating ?? 0) as String
         if let photo = workshop.photos {
             defaultImage = photo.first
             photoRefWithUrl = WorkshopTransform.transformGoogleUrl(height: "\(defaultImage?.height ?? 550)",
@@ -29,7 +28,7 @@ final class WorkshopTransform {
                                     workshopStatus: WorkshopStatus.init(isOpen: isOpen),
                                     photos: defaultImage,
                                     placePhotos: photoRefWithUrl,
-                                    rating: rating,
+                                    rating: workshop.rating,
                                     vicinity: workshop.vicinity)
     }
     
